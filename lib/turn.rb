@@ -32,7 +32,7 @@ def move(board, input, value = "X")
 end
 
 def turn(board, input)
-  print "Please enter 1-9:"
+  puts "Please enter 1-9:"
   input = gets.chomp
   if input.between(1, 9)
     move(board, input, value)
