@@ -27,8 +27,8 @@ def valid_move?(board, index)
   end
 end
 
-def move(board, input, value = "X")
-  board[input] = value
+def move(board, index, value = "X")
+  board[index] = value
 end
 
 def turn(board)
@@ -36,7 +36,7 @@ def turn(board)
   input = gets.strip
   index = input_to_index(input)
   if valid_move?(board, index)
-    move(board, input)
+    move(board, index)
     display_board(board)
   else
     turn(board)
