@@ -31,7 +31,7 @@ def move(board, input, value = "X")
 end
 
 def turn(board, input)
-  puts "Please enter 1-9:"
+  print "Please enter 1-9:"
   input_to_index(input)
   if input.between(1, 9)
     move
