@@ -36,6 +36,7 @@ def turn(board)
   input = gets.chomp
   if input.between(1, 9)
     move(board, input, value)
+    display_board(board)
   else
     puts "Please enter 1-9:"
   end
